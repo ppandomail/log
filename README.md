@@ -48,7 +48,7 @@
 | 12 | 12/06 | **2do. Parcial** |
 | 13 | 19/06 | **FERIADO** |
 | 14 | 26/06 | Intro IA. AI y SE |
-| 15 | 03/07 | Intro IA. RN y AG|
+| 15 | 03/07 | Intro IA. RN y AG |
 | 16 | 10/07 | **Recuperatorios**. Cierre de Notas |
 
 ## Condiciones para aprobar
