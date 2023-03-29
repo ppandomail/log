@@ -30,6 +30,27 @@
 * [Lógica computacional (José Fernandez y otros)](biblio/)
 * [Apuntes (Pablo Pandolfo)](doc/)
 
+## Cronograma
+
+| **Clase** | **Fecha** | **Tema** |
+| -- | -- | -- |
+| 01 | 27/03 | Presentación |
+| 02 | 03/04 | Lógica Proposicional. Sintaxis |
+| 03 | 10/04 | Lógica Proposicional. Semántica |
+| 04 | 17/04 | Lógica de Predicados. Sintaxis |
+| 05 | 24/04 | Lógica de Predicados. Semántica |
+| 06 | 01/05 | **FERIADO** |
+| 07 | 08/05 | **1er. Parcial** |
+| 08 | 15/05 | Programación Lógica. Sintaxis y Semántica Prolog |
+| 09 | 22/05 | Programación Lógica. Listas en Prolog |
+| 10 | 29/05 | Programación Lógica. Ejercicios Prolog |
+| 11 | 05/06 | Verificación Formal de Programas |
+| 12 | 12/06 | **2do. Parcial** |
+| 13 | 19/06 | **FERIADO** |
+| 14 | 26/06 | Intro IA. AI y SE |
+| 15 | 03/07 | Intro IA. RN y AG|
+| 16 | 10/07 | **Recuperatorios**. Cierre de Notas |
+
 ## Condiciones para aprobar
 
 * 75% asistencia
