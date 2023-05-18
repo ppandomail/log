@@ -83,7 +83,8 @@
 (Símbolos: P(x) representa que x es un programa y R(x, y) representa que x resuelva a y).
 
     ```plain
-    Sol: ¬∃x(P(x) ^ ∀y(P(y) -> R(x, y)))
+    Sol1: ¬∃x(P(x) ^ ∀y(P(y) -> R(x, y)))
+    Sol2: ¬∃x(P(x) ^ ∀yR(x,y))
     ```
 
 1. [1 punto]: Cálculese la forma normal conjuntiva de la fómula F : p ∨ q <-> ¬r
