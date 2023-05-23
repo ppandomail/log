@@ -12,5 +12,5 @@ ruta(ba, mdq).
 ruta(ba, mi).
 ruta(mdq, mi).
 ruta(lp, mi).
-camino(O, D) :- ruta(O, D).
+camino(O, D) :- ruta(O, D), !.
 camino(O, D) :- ruta(O, I), camino(I, D).

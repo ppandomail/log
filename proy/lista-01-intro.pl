@@ -17,7 +17,7 @@ cola([_|Q], Q).
 % Obtener el ultimo elemento de una lista
 % ---------------------------------------
 
-ultimo([E], E).						
+ultimo([E], E) :- !.						
 ultimo([_|Q], E) :- ultimo(Q, E).
 
 
@@ -40,7 +40,7 @@ elemento_k([_|Q], K, E) :- K > 0, K1 is K - 1, elemento_k(Q, K1, E).
 % Verificar existencia de elemento en la lista
 % --------------------------------------------
 
-existe([X|_], X).                     
+existe([X|_], X) :- !.                     
 existe([_|Q], X) :- existe(Q, X).   
 
 

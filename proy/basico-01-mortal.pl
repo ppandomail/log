@@ -12,7 +12,7 @@
 % . Preguntas: consultas      Ejemplo: ?- gato(tom).
 %                                      true.
 
-% Herramienta desktop: SWI Prolog (URL: https://www.swi-prolog.org/)
+% Herramienta CLI:     SWI Prolog (URL: https://www.swi-prolog.org/)
 % Herramienta online:  SWISH      (URL: https://swish.swi-prolog.org/)
 
 humano(socrates).
