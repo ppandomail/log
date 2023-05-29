@@ -1,0 +1,12 @@
+wp(S1; S2, Q) = wp(S1, wp(S2, Q))
+
+wp(x = x + 1; y = y + 2, x < y)
+wp(x = x + 1, wp(y = y + 2, x < y))
+wp(x = x + 1, (x < y){y / y + 2})
+wp(x = x + 1, (x < y + 2))
+wp(x = x + 1, x < y + 2)
+(x < y + 2){x / x + 1}
+(x + 1 < y + 2)
+x < y + 2 - 1
+x < y + 1
+

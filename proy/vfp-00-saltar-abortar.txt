@@ -1,0 +1,5 @@
+Precondición más débil o predicado transformador R = wp(S, Q) tal que {R} S {Q} es verdadero.
+
+wp(saltar, Q) = Q 
+
+wp(abortar, Q) =  False
