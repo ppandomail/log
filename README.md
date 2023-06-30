@@ -21,7 +21,11 @@
 1. [Lógica de Predicados](doc/predicados.md)
 1. [Programación Lógica](doc/prog-logica.md)
 1. [Verificación Formal de Programas](doc/verificacion-formal.md)
-1. [Intro a IA](doc/intro-ia.md)
+1. [Intro a IA](doc/ia.md)
+    1. [Sistemas Expertos](doc/se.md)
+    1. [Agentes Inteligentes](doc/ai.md)
+    1. [Redes Neuronales](doc/rna.md)
+    1. [Algoritmos Genéticos](doc/ag.md)
 
 ## Bibliografía
 
