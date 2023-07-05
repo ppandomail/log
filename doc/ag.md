@@ -2,7 +2,8 @@
 
 * Son métodos adaptativos que pueden ser utilizados para implementar búsquedas y problemas de optimización.
 * Son una clase particular de algoritmos evolutivos.
-* Su característica principal es que se basan en técnicas inspiradas en la evolución biológica.
+* Su característica principal es que se basan en técnicas inspiradas en la evolución biológica y genética.
+* Utilizan reproducción, selección natural y mutación para resolver problemas complejos.
 
 ![AG que son](img/ag-definicion.jpg)
 
@@ -13,6 +14,10 @@
 * **Individuo**: es un cromosoma y es el código de información sobre el cual opera el algoritmo. Cada solución parcial del problema a optimizar está codificada en forma de cadena o string en un alfabeto determinado, que puede ser binario.
 
 ![AG mapa](img/ag-mapa.jpg)
+
+* Los operadores genéticos (recombinación y mutación) combinan y modifican soluciones existentes usando **principios lógicos**.
+* La función de aptitud utiliza **lógica** para evaluar la calidad de las soluciones
+* El proceso de selección se basa en **principios lógicos de selección natural**. El criterio de parada se define **lógicamente** para determinar cuándo detener el algoritmo.
 
 ## Funcionamiento
 
@@ -25,3 +30,28 @@
 ![AG funcionamiento](img/ag-func1.PNG)
 
 ![AG funcionamiento](img/ag-func2.PNG)
+
+## Áreas de aplicación
+
+* Optimización
+* Aprendizaje automatizado
+* Diseño de productos y procesos
+* Economía y finanzas
+* Bioinformática
+* Robótica y control
+
+## Ventajas
+
+* Exploración eficiente del espacio de búsqueda
+* Capacidad para encontrar soluciones óptimas o subóptimas
+* Adaptabilidad a problemas complejos con múltiples variables y restricciones
+* Tolerancia a ruido o incertidumbre en los datos
+* Potencial para la optimización multiobjetivo
+
+## Desventajas
+
+* Necesidad de definir una representación adecuada para el problema
+* Posible convergencia prematura hacia una solución subóptima
+* Requieren un número considerable de evaluaciones de la función objetivo
+* Sensibilidad a la elección de parámetros y operadores
+* No garantizan encontrar la solución óptima en todos los casos
