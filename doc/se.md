@@ -2,6 +2,7 @@
 
 * Es un sistema informático que simula los procesos de aprendizaje, memorización, razonamiento, comunicación y acción de un experto humano en una determinada rama de la ciencia.
 * Es un sistema que emplea conocimiento humano capturado en una computadora para resolver problemas que normalmente requieren de expertos humanos
+* Su objetivo es utilizar el conocimiento y la experiencia del experto para tomar decisiones, realizar diagnósticos, resolver problemas y brindar recomendaciones en un área particular.
 
 ![SE definición](img/se-definicion1.jpg)
 
@@ -71,3 +72,39 @@
 ![Ejemplos de PROLOG 1.3](img/se-ejemplo1-3.png)
 ![Ejemplos de PROLOG 2.1](img/se-ejemplo2-1.png)
 ![Ejemplos de PROLOG 2.2](img/se-ejemplo2-2.png)
+
+## Otro ejemplo
+
+* Sistema de orientación vocacional, que utiliza como dato la afinidad de una persona con determinadas materias, y permite determinar el área de estudio más acorde a la misma.
+
+```prolog
+%Hechos: que materias le gusta a cada persona
+le_gusta(mario, literatura).
+le_gusta(mario, historia).
+le_gusta(mario, deporte).
+le_gusta(ailen, biología).
+le_gusta(ailen, química).
+le_gusta(silvana, matemáticas).
+le_gusta(silvana, programación).
+le_gusta(silvana, música).
+le_gusta(mario, arte).
+le_gusta(fabián, deporte).
+le_gusta(giselle, matemáticas).
+
+%Reglas: el área de estudio recomendo para determinada persona, depende de las materias que le guste. 
+area_de_estudio(X, humanidades):- le_gusta(X, literatura), le_gusta(X, historia).
+area_de_estudio(X, ciencias):- le_gusta(X, biología), le_gusta(X, química).
+area_de_estudio(X, deporte):- le_gusta(X, deporte).
+area_de_estudio(X, ingeniería):- le_gusta(X, matemáticas), le_gusta(X, programación); le_gusta(X, matemáticas).
+area_de_estudio(X, arte):- le_gusta(X, música), le_gusta(X, arte).
+
+%Ejemplo de consultas que pueden realizarse:
+%?-area_de_estudio(mario, X). %Que área de estudio es recomendable para mario.
+%?-area_de_estudio(mario, deporte). %Si el área de estudio de Mario se correspone con el deporte.
+%?-area_de_estudio(X, Y). %Que área de estudio es recomendable para cada persona.
+%?-area_de_estudio(X, ciencias). %A que personas se les recomienda el área de estudio Ciencias.
+%?-le_gusta(X, matemáticas). %A qué personas les gusta las matemáticas.
+%?-le_gusta(silvana, X). %Qué materias le gustan a Silvana.
+%?-le_gusta(X,Y). %Qué materias les gustan a cada persona.
+
+```
