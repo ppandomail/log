@@ -33,6 +33,28 @@
     * [1 punto] Cláusula de Horn
     * [1 punto] Prolog
 
+    ```plain
+    Lógica de predicado: (mujer(A) ^ padre(B, A)) -> hija(A, B)
+    Cláusula de Horn:    ¬mujer(A) v ¬padre(B, A) v hija(A, B)
+    Prolog:              hija(A, B) :- mujer(A), padre(B, A).
+    ```
+
 1. [4 puntos]: Escríbase un predicado cond(L) que dada una lista de enteros L, escriba la lista que, para cada elemento de L dice cuantas veces aparece este elemento en L. Por ejemplo, si hacemos la consulta ?- cond([1, 2, 1, 5, 1, 3, 3, 7]). El intérprete escibirá [[1,3], [2,1], [5,1], [3,2], [7,1]]
 
 1. [3 puntos] Calcúlese detalladamente la precondición más débil para el siguiente algoritmo {pmd} x := 4;  y := 2; x := x+1; y := y+3 {x > y}
+
+    ```plain
+    wp(x := 4;  y := 2; x := x+1; y := y+3, x > y)
+    wp(x := 4;  y := 2; x := x+1; wp(y := y+3, x > y))
+    wp(x := 4;  y := 2; x := x+1; x > y {y / y+3})
+    wp(x := 4;  y := 2; x := x+1; x > y+3)
+    wp(x := 4;  y := 2; wp(x := x+1, x > y+3))
+    wp(x := 4;  y := 2; x > y+3 {x / x+1})
+    wp(x := 4;  y := 2; x+1 > y+3)
+    wp(x := 4;  wp(y := 2, x+1 > y+3))
+    wp(x := 4; x+1 > y+3 {y / 2})
+    wp(x := 4; x+1 > 5)
+    x+1 > 5 {x / 4}
+    5 > 5
+    F
+    ```

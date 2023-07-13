@@ -35,3 +35,8 @@
 1. Si el conjunto de símbolos de predicados es P = \<fe, al, est>, con el significado: fe(x) : "x se siente feliz"; al(x) : "x ama la lógica"; est(x, y) : "x es estudiante de y". Formalizar las frases:
     * [3 puntos] Todo profesor se siente feliz si todos sus estudiantes aman la lógica
     * [3 puntos] Todo profesor se siente feliz si no tiene estudiante
+
+        ```plain
+        ∀x (∀y (est(y, x) -> al(y)) -> fe(x))
+        ∀x(∀y ¬est(y, x) -> fe(x))
+        ```
