@@ -107,7 +107,7 @@
 
 * Ejemplo: A = (p -> q) v ¬q
   * Sf(A) = Sf((p -> q)) U Sf(¬q) U {A}
-  * Sf(A) = Sf(p) U Sf(q) U {p -> q} U Sf(q} U {¬q} U {A}
+  * Sf(A) = Sf(p) U Sf(q) U {p -> q} U Sf(q) U {¬q} U {A}
   * Sf(A) = {p} U {q} U {p -> q} U {¬q} U {A}
 
 ### GIC
