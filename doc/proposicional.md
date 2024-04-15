@@ -497,7 +497,7 @@ j = 1, ..., n  i = 1, ..., m
     1. (p ∧ q) ∨ (p ∧ ¬q)   y   p
 
     ```plain
-    1. No es equivalente.
+    1. Es equivalente.
     2. No es equivalente.
     3. No es equivalente.
     4. Es equivalente.
