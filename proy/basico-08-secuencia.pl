@@ -1,1 +1,0 @@
-secuencia(M, N) :- M < N + 1, nl, write(M), NuevoM is M + 1, secuencia(NuevoM, N).

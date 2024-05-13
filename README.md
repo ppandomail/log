@@ -19,7 +19,7 @@
 
 1. [Lógica Proposicional](doc/proposicional.md)
 1. [Lógica de Predicados](doc/predicados.md)
-1. [Programación Lógica](doc/prog-logica.md)
+1. [Programación Lógica](proy/PROLOG/)
 1. [Verificación Formal de Programas](doc/verificacion-formal.md)
 1. [Intro a IA](doc/ia.md)
     1. [Sistemas Expertos](doc/se.md)

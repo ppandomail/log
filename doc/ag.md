@@ -7,14 +7,6 @@
 
 ![AG que son](img/ag-definicion.jpg)
 
-## Historia
-
-* **1960**: John Holland introduce el concepto de algoritmos genéticos.
-* **1975**: Holland publica su libro "Adaptation in Natural and Artificial Systems", donde detalla el funcionamiento de los algoritmos genéticos.
-* **1989**: David E. Goldberg publica "Genetic Algorithms in Search, Optimization, and Machine Learning", uno de los libros fundamentales en el campo de los algoritmos genéticos.
-* **1992**: Publicación del libro "Evolutionary Computation: Toward a New Philosophy of Machine Intelligence" de David B. Fogel, que presenta la idea de utilizar algoritmos genéticos en la resolución de problemas complejos.
-* **2002**: El algoritmo genético NSGA-II es propuesto por Kalyanmoy Deb, et al., y se convierte en uno de los algoritmos más utilizados para la optimización multiobjetivo.
-
 ## Elementos
 
 * **Población**: conjunto de posibles soluciones al problema que se desea resolver. Estas soluciones se representan mediante estructuras de datos llamadas "individuos" o "cromosomas". El método de AGs consiste en ir obteniendo de forma sucesiva distintas poblaciones.

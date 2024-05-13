@@ -10,24 +10,6 @@
 
 ![RNA definición](img/rna-definicion2.jpg)
 
-## Historia
-
-* **1943**: Warren S. McCulloch y Walter Pitts publicaron "A logical calculus of the ideas immanent in nervous activity”. En este estudio, se propuso un modelo de neurona artificial que comparaba las neuronas con un umbral binario a la lógica booleana.
-
-![Historia-1943](img/historia-1943.jpg)
-
-* **1958**: Frank Rosenblatt desarrolló el perceptrón y documentó su trabajo en "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain”. El perceptrón introdujo ponderaciones en la ecuación y permitió a un ordenador aprender a distinguir patrones en los datos.
-
-![Historia-1958](img/historia-1958.jpg)
-
-* **1974**: Paul Werbos fue la primera persona en Estados Unidos en descubrir la aplicación de la retropropagación a las redes neuronales en su tesis doctoral.
-
-![Historia-1974](img/historia-1974.jpg)
-
-* **1989**: Yann LeCun publicó un estudio que ilustraba el uso de restricciones en la retropropagación y su integración en la arquitectura de redes neuronales para entrenar algoritmos. Esta investigación utilizó con éxito una red neuronal para reconocer los dígitos de código postal escritos a mano.
-
-![Historia-1989](img/historia-1989.jpg)
-
 ## Modelo general
 
 * La estructura básica de una red neuronal consta de capas de neuronas interconectadas.

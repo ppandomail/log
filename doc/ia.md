@@ -28,13 +28,3 @@
 * **Narrow IA**: realiza tareas específicas como reconocer un rostro o una voz. Ejemplo: Google Lens
 * **General IA**: similar a la conducta humana, toma el conocimiento en lo que hasido entrenado y aprende algo nuevo. Ejemplo: Siri oo Alexa
 * **Super IA**: es proyecto que permanece en la fantasía, pero se cree que superará la inteligencia de los humanos. Ejemplo: J.A.R.V.I.S. del universo Marvel.
-
-## Nuevas tecnologías con IA en la actualidad
-
-![IA nuevas tecnologías](img/ia-tec1.jpg)
-
-![IA nuevas tecnologías](img/ia-tec2.jpg)
-
-![IA nuevas tecnologías](img/ia-tec3.jpg)
-
-![IA nuevas tecnologías](img/ia-tec4.jpg)

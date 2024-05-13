@@ -32,14 +32,6 @@
 * **Agentes móviles**: es el que lleva a cabo alguna tarea para el usuario y que al hacerlo, visita varios ordenadores de una red. El agente logra realizar esta función porque su código es copado en el ordenador remoto y se ejecuta allí.
 * **Agentes de interfaz**: son los que apoyan y dan asistencia, principalmente al usuario, para que aprenda a utilizar una aplicación en particular.
 
-## Historia
-
-* Se podría decir que los orígenes de los AI comienzan en la década de los 50, cuando los científicos comenzaron a explotar la idea de la IA y cómo las máquinas podrían emular el comportamiento de los seres humanos.
-* En el año 1950, el británico Alan Turing propone la "Prueba de Turing" como un criterio para evaluar la inteligencia de una máquina.
-* A mediados de los 60, Joseph Weizenbaum del MIT, creó ELIZA, uno de los primeros programas de procesamiento del lenguaje natural desarrollado en el campo de la IA. Ésta fue diseñada para simular una conversación con un terapeuta, y se basaba principalmente en el reconocimiento de patrones, siendo así, uno de las primeras implementaciones exitosas de un chatbot.
-* En la década de los 70, los investigadores exploraron la idea de AI que pudiesen percibir y actuar en los entornos más complejos. Surgieron trabajos sobre planificación automática que permiten a los agentes generar secuencias de acciones para lograr objetivos específicos.
-* Con el avance de la tecnología y la disponibilidad de grandes cantidades de datos, el aprendizaje automático y las redes neuronales se convirtieron en técnicas fundamentales para los AI. Los avances en el procesamiento del lenguaje natural, la visión por computadora y la robótica impulsaron el desarrollo de AI más sofisticados y capaces.
-
 ## Funcionamiento
 
 * Los agentes inteligentes funcionan a través de un ciclo de percepción-razonamiento-acción:
@@ -58,36 +50,3 @@
 4. **Sistemas de recomendación**: Utilizados en plataformas de streaming de música y video, sitios de comercio electrónico y redes sociales, utilizan agentes inteligentes para analizar datos y brindar recomendaciones de acuerdo a las preferencias de los usuarios.
 5. **Robótica**: Los robots utilizan agentes inteligentes para interactuar con su entorno, realizar tareas específicas y adaptarse a situaciones cambiantes
 6. **Salud**: Se aplican en el diagnóstico médico, el análisis de imágenes médicas, la investigación de fármacos y la monitorización de pacientes entre otros usos.
-
-## Ejemplo en PROLOG: Las torres de Hanói
-
-![Torres de Hanoi](img/ai-hanoi.jpeg)
-
-* El problema de las Torres de Hanoi es un famoso problema matemático y de lógica.
-* Consiste en mover una pila de discos de una torre inicial a una torre final, utilizando una torre auxiliar como ayuda.
-* El problema tiene las siguientes reglas:
-  * Solo se puede mover un disco a la vez.
-  * Un disco grande no puede colocarse sobre un disco de menor tamaño.
-  * Solo se pueden realizar movimientos válidos desde una torre a otra.
-  * El objetivo es mover todos los discos de la torre inicial a la torre final, respetando las reglas mencionadas.
-
-* El número de discos en el problema determina la complejidad del mismo. Para resolver el problema de las Torres de Hanoi con **N** cantidad de discos, se requieren **2^N - 1** movimientos.
-
-```prolog
-mover(1, X, Y, _) :-
-    write('Mueva el disco superior de '),
-    write(X),
-    write(' a '),
-    write(Y),
-    nl.
-
-mover(N, X, Y, Z) :-
-    N > 1,
-    M is N - 1,
-    mover(M, X, Z, Y),
-    mover(1, X, Y, _),
-    mover(M, Z, Y, X).
-
-hanoi(N) :-
-    mover(N, 'Torre 1', 'Torre 3', 'Torre 2'). 
-```
