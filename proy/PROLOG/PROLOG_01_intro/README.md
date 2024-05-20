@@ -267,20 +267,20 @@ de las reglas o los hechos.
   ```
 
   ```pl
-  padre(juan, pedro).
-  padre(maria, pedro).
+  progenitor(juan, pedro).
+  progenitor(maria, pedro).
   hermano(pedro, vicente).
   hermano(pedro, alberto).
-  hermano(A, B) :- padre(P, A), padre(P, B), A\==B.
-  nieto(A, B) :- padre(P, A), padre(B, P).
-  tio(X, Y) :- padre(X, Z), hermano(Z, Y).
+  hermano(A, B) :- progenitor(P, A), progenitor(P, B), A\==B.
+  nieto(A, B) :- progenitor(P, A), progenitor(B, P).
+  tio(X, Y) :- progenitor(X, Z), hermano(Z, Y).
 
   ?- trace, tio(U, V).            % objetivo
   Call:tio(_1578,_1574)           % busca la 1ra cláusula que unifique
-  Call:padre(_472,_708)          % nos da, un nuevo objetivo (meta)
-  Exit:padre(juan,pedro)         % unifica
-  Call:hermano(pedro,_468)       % nos da, un nuevo objetivo (meta)
-  Exit:hermano(pedro,vicente)    % unifica
+  Call:progenitor(_472,_708)      % nos da, un nuevo objetivo (meta)
+  Exit:progenitor(juan,pedro)     % unifica
+  Call:hermano(pedro,_468)        % nos da, un nuevo objetivo (meta)
+  Exit:hermano(pedro,vicente)     % unifica
   Exit:tio(juan,vicente)          % unifica
   U = juan,
   V = vicente

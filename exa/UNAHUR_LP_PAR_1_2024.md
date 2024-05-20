@@ -30,12 +30,42 @@
 
 1. [1 punto]: Tradúzcase al lenguaje simbólico los siguientes enunciados de un conocimiento geográfico:
     * Si Hurlingham es vecina de Morón, entonces Morón es vecina de Hurlingham. Hurlingham es vecina de Morón. Por tanto, Morón es vecina de Hurlingham.
+
+        ```plain
+        {HvM -> MvH, HvM} |= MvH
+        ```
+
     * Si una ciudad es vecina de otra, entonces la segunda es vecina de la primera. Hurlingham es vecina de Morón. Por tanto, Morón es vecina de Hurlingham.
+
+        ```plain
+        {∀x∀y (vecina(x,y) -> vecina(y,x)), vecina(Hurlingham, Morón)} |= vecina(Morón, Hurlingham)
+        ```
+
 1. [2 punto]: Tradúzcase al lenguaje simbólico los siguientes enunciados de un conocimiento astronómico:
     * Todo planeta gira alrededor del Sol.
+
+        ```plain
+        ∀x (planeta(x) -> gira(x, Sol))
+        ```
+
     * Algún planeta gira alrededor de la Luna.
+
+        ```plain
+        ∃x (planeta(x) ^ gira(x, Luna))
+        ```
+
     * Alrededor de los satélites no giran objetos.
+
+        ```plain
+        ∀x (satelite(x) -> ¬∃y gira(y, x))
+        ```
+
     * La Luna no gira alrededor de dos planetas diferentes.
+
+        ```plain
+        ¬∃x ∃y (planeta(x) ^ planeta(y) ^ gira(Luna, x) ^ gira(Luna, y) ^ x <> y)
+        ```
+
 1. [1 punto]: Enúnciese 2 enunciados en un determinado conocimiento y tradúzcase al lenguaje simbólico.
 1. [2 puntos]: Complétese el siguiente cuadro:
 
