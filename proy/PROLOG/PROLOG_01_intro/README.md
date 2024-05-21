@@ -273,17 +273,36 @@ de las reglas o los hechos.
   hermano(pedro, alberto).
   hermano(A, B) :- progenitor(P, A), progenitor(P, B), A\==B.
   nieto(A, B) :- progenitor(P, A), progenitor(B, P).
-  tio(X, Y) :- progenitor(X, Z), hermano(Z, Y).
+  tio(X, Y) :- hermano(X, Z), progenitor(Z, Y).
 
-  ?- trace, tio(U, V).            % objetivo
-  Call:tio(_1578,_1574)           % busca la 1ra cláusula que unifique
-  Call:progenitor(_472,_708)      % nos da, un nuevo objetivo (meta)
-  Exit:progenitor(juan,pedro)     % unifica
-  Call:hermano(pedro,_468)        % nos da, un nuevo objetivo (meta)
-  Exit:hermano(pedro,vicente)     % unifica
-  Exit:tio(juan,vicente)          % unifica
-  U = juan,
-  V = vicente
+  ?- trace, tio(U, V).            
+  
+  Call:tio(_5478,_5474)
+    Call:hermano(_500,_736)
+    Exit:hermano(pedro,vicente)
+    Call:progenitor(vicente,_496)
+    Fail:progenitor(vicente,_496)
+  Redo:hermano(_500,_730)
+    Exit:hermano(pedro,alberto)
+    Call:progenitor(alberto,_496)
+    Fail:progenitor(alberto,_496)
+  Redo:hermano(_500,_730)
+    Call:progenitor(_744,_500)
+    Exit:progenitor(juan,pedro)
+    Call:progenitor(juan,_730)
+    Exit:progenitor(juan,pedro)
+    Call:pedro\==pedro
+    Fail:pedro\==pedro
+  Redo:progenitor(_732,_500)
+    Exit:progenitor(maria,pedro)
+    Call:progenitor(maria,_730)
+    Exit:progenitor(maria,pedro)
+    Call:pedro\==pedro
+    Fail:pedro\==pedro
+   Fail:hermano(_500,_730)
+  Fail:tio(_500,_496)
+
+  false
   ```
 
 ## Corte
@@ -326,4 +345,10 @@ desde su posición hasta la cabeza de la regla donde aparece.
 
 ```pl
 saludo:-write('Tu nombre?'), read(N), write('Hola '), write(N).
+
+?- saludo.
+
+% cuando se ponga el nombre, ponerlo en:
+% minúscula (ejemplo: pepe) o entre comillas (ejemplo: 'Pepe')
+
 ```
