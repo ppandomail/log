@@ -19,8 +19,8 @@
 
 1. [Lógica Proposicional](doc/proposicional.md)
 1. [Lógica de Predicados](doc/predicados.md)
-1. [Programación Lógica](proy/prolog/)
-1. [Verificación Formal de Programas](proy/vfp/)
+1. [Programación Lógica](proy/lenguaje-prolog/)
+1. [Verificación Formal de Programas](proy/verificacion-formal-programas/)
 1. [Intro a IA](proy/ia/)
     1. [Sistemas Expertos](proy/sistemas-expertos/)
     1. [Agentes Inteligentes](proy/agentes-inteligentes/)
