@@ -19,20 +19,20 @@
 
 1. [Lógica Proposicional](doc/proposicional.md)
 1. [Lógica de Predicados](doc/predicados.md)
-1. [Programación Lógica](proy/PROLOG/)
-1. [Verificación Formal de Programas](doc/verificacion-formal.md)
-1. [Intro a IA](doc/ia.md)
-    1. [Sistemas Expertos](doc/se.md)
-    1. [Agentes Inteligentes](doc/ai.md)
-    1. [Redes Neuronales](doc/rna.md)
-    1. [Algoritmos Genéticos](doc/ag.md)
+1. [Programación Lógica](proy/prolog/)
+1. [Verificación Formal de Programas](proy/vfp/)
+1. [Intro a IA](proy/ia/)
+    1. [Sistemas Expertos](proy/sistemas-expertos/)
+    1. [Agentes Inteligentes](proy/agentes-inteligentes/)
+    1. [Redes Neuronales](proy/rna/)
+    1. [Algoritmos Genéticos](proy/algoritmos-geneticos/)
 
 ## Bibliografía
 
-* [Lógica para informáticos (Farré Rafel y otros)](biblio/)
+* [Lógica para informáticos (Farré Rafel y otros)](biblio/libro-logica-para-informatica.pdf)
 * [Lógica para la computación (Luis De Ledesma)](biblio/)
-* [Lógica computacional (José Fernandez y otros)](biblio/)
-* [Apuntes (Pablo Pandolfo)](doc/)
+* [Lógica computacional (José Fernandez y otros)](biblio/libro-logica-computacional.pdf)
+* [Programación Lógica (Pascual Iranzo y otro)](biblio/libro-prog-logica.pdf)
 
 ## Cronograma
 
