@@ -70,19 +70,35 @@
 1. [0.5 puntos]: Calcúlese detalladamente la precondición más débil para el siguiente algoritmo {pmd} x := x + 1; a := a - 1; {a + x > 0}
 
     ```plain
+    wp(x := x + 1; a := a - 1, a + x > 0)
+    wp(x := x + 1, wp(a := a - 1, a + x > 0))
+    wp(x := x + 1, (a + x > 0) {a / a - 1})
+    wp(x := x + 1, a + x > 1)
+    (a + x > 1) {x / x + 1}
+    a + x + 1 > 1
     a + x > 0
     ```
 
 1. [0.5 puntos]: Calcúlese detalladamente la precondición más débil para el siguiente algoritmo {pmd} if x >= y then x := 0 else x := 2 {(x = 0 v x = 2) ^ y = 1}
 
     ```plain
-    y = 1
+    wp(if x >= y then x := 0 else x := 2, (x = 0 ∨ x = 2) ∧ y = 1)
+    (x >= y -> wp(x := 0, (x = 0 ∨ x = 2) ∧ y = 1)) ∧ (x < y -> wp(x := 2, (x = 0 ∨ x = 2) ∧ y = 1))
+    (x >= y -> (0 = 0 ∨ 0 = 2) ∧ y = 1) ∧ (x < y -> (2 = 0 ∨ 2 = 2) ∧ y = 1)
+    (x >= y -> T ∧ y = 1) ∧ (x < y -> T ∧ y = 1)
+    (x >= y -> y = 1) ∧ (x < y -> y = 1)
+    y = 1    
     ```
 
 1. [1.5 punto]: Calcúlese detalladamente la precondición más débil para el siguiente algoritmo {pmd} if x >= y then skip else x, y := y, x {x >= y}
 
     ```plain
-    True
+    wp(if x >= y then skip else x, y := y, x, x >= y)
+    (x >= y -> wp(skip, x >= y)) ∧ (x < y -> wp(x, y := y, x, x >= y))
+    (x >= y -> x >= y) ∧ (x < y -> y >= x)
+    T ∧ (x < y -> y >= x)
+    T ∧ T
+    T
     ```
 
 ---
