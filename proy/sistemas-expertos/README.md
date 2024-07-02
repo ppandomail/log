@@ -1,8 +1,6 @@
 # Sistemas expertos (SE)
 
-* Es un sistema informático que simula los procesos de aprendizaje, memorización, razonamiento, comunicación y acción de un experto humano en una determinada rama de la ciencia.
-* Es un sistema que emplea conocimiento humano capturado en una computadora para resolver problemas que normalmente requieren de expertos humanos
-* Su objetivo es utilizar el conocimiento y la experiencia del experto para tomar decisiones, realizar diagnósticos, resolver problemas y brindar recomendaciones en un área particular.
+* Son programas informáticos que utilizan IA para tratar de simular el proceso de razonamiento, aprendizaje, memorización, comunicación y acción de un profesional humano con el objetivo de solucionar un problema, utilizando el conocimiento y la experiencia del experto para tomar decisiones, realizar diagnósticos, resolver problemas y brindar recomendaciones en un área particular.
 
 ![SE definición](img/se-definicion1.jpg)
 
@@ -12,19 +10,24 @@
 
 ## Características
 
-* **Habilidad para adquirir el conocimiento**: esto es igual a decir que el software haya sido bien diseñado.
-* **Fiabilidad**: que nos proporcione resultados con el menor número de errores posible.
-* **Capacidad**: poder responder al mayor número de problemas en su área.
+* **Habilidad para adquirir el conocimiento**: esto es igual a decir que el software haya sido bien diseñado
+* **Confiabilidad**: que nos proporcione resultados con el menor número de errores posible
+* **Capacidad**: poder responder al mayor número de problemas en su área
 
-1. Ayuda a la toma de decisiones con la competencia de un experto, ya que lo que hacemos es volcar en dicho sistema el conocimiento que tienen los expertos humanos.
+1. Ayuda a la toma de decisiones con la competencia de un experto, ya que lo que hacemos es volcar en dicho sistema el conocimiento que tienen los expertos humanos
 1. Representa el conocimiento basándose en la inferencia. La inferencia de las reglas que son depositadas dentro de la base de datos de conocimiento
-1. La inferencia se realiza mediante el tratamiento de un gran volumen de conocimiento de tipo teórico.
-1. El sistema razona sobre esas operaciones y ese razonamiento de tipo lógico basado en reglas. Si existe un antecedente y el consecuente se da y el consecuente es un hecho, se da entrada a una nueva regla.
-1. Constituye un sistema que no es algorítmico : A pesar de los dos algoritmos base que utiliza dicho sistema para poder manejarse en realidad en sí el descubrimiento de la información no es un sistema algorítmico.
-1. Admite una fácil modificación del conocimiento sin reprogramar el sistema. Aumentamos el conocimiento a medida que aumentamos las reglas, y vayamos modificando dichas reglas.
-1. El usuario dialoga con un sistema natural.
+1. La inferencia se realiza mediante el tratamiento de un gran volumen de conocimiento de tipo teórico
+1. El sistema razona sobre esas operaciones y ese razonamiento de tipo lógico basado en reglas. Si existe un antecedente y el consecuente se da y el consecuente es un hecho, se da entrada a una nueva regla
+1. Constituye un sistema que no es algorítmico : A pesar de los dos algoritmos base que utiliza dicho sistema para poder manejarse en realidad en sí el descubrimiento de la información no es un sistema algorítmico
+1. Admite una fácil modificación del conocimiento sin reprogramar el sistema. Aumentamos el conocimiento a medida que aumentamos las reglas, y vayamos modificando dichas reglas
+1. El usuario dialoga con un sistema natural
 
 ## Componentes
+
+* **Base de conocimientos**:  donde se almacena la información que se necesita, está compuesto por reglas, hechos y ejemplos
+* **Motor de inferencias**: es el responsable de seguir determinadas reglas, seleccionando las que considere necesarias y ejecutándolas con el objetivo de resolver un problema
+* **Base de hechos**: es la que almacena la información de las distintas fases de un sistema experto
+* **Módulos de comunicación**: es el espacio donde los usuarios realizan consultas, brindan información e incluso, exploran el paso a paso del razonamiento por detrás de la toma de decisión del sistema experto
 
 ![Estructura](img/estructura.png)
 
@@ -34,9 +37,17 @@
 
 ## Clasificación
 
+* **RBR** (Rules Based Reasoning): es el que viene dado por la sujeción a reglas preestablecidas. Utilizan una base de conocimiento compuesta por reglas if-then, donde las reglas representan el conocimiento y las decisiones del experto. El sistema aplica estas reglas a los datos de entrada para llegar a conclusiones o recomendaciones
 * **CBR** (Case Based Reasoning): es decir, razonamiento basado en casos. Almacenan y utilizan una base de conocimiento compuesta por casos o ejemplos específicos. Cada caso contiene información detallada sobre una situación o problema y la solución correspondiente proporcionada por el experto. El sistema busca casos similares al problema actual y utiliza las soluciones pasadas como guía para resolver el problema actual
-* **RBR** (Rules Based Reasoning): es el que viene dado por la sujeción a reglas preestablecidas. Utilizan una base de conocimiento compuesta por reglas if-then, donde las reglas representan el conocimiento y las decisiones del experto. El sistema aplica estas reglas a los datos de entrada para llegar a conclusiones o recomendaciones.
-* **Basados en redes bayesianas**: aquí se fusionan el teorema de Bayes y la teoría de la probabilidad, con lo que se consigue un sinnúmero de variables aleatorias. Utiliza modelos probabilísticos llamados redes bayesianas para representar el conocimiento y el razonamiento experto. Estas redes capturan las relaciones de dependencia entre variables y se utilizan para realizar inferencias y tomar decisiones basadas en la evidencia disponible. Estos sistemas son útiles en situaciones de incertidumbre y con datos limitados, y se aplican en campos como medicina, análisis de riesgos y toma de decisiones.
+* **Basados en redes bayesianas**: aquí se fusionan el teorema de Bayes y la teoría de la probabilidad, con lo que se consigue un sinnúmero de variables aleatorias. Utiliza modelos probabilísticos llamados redes bayesianas para representar el conocimiento y el razonamiento experto. Estas redes capturan las relaciones de dependencia entre variables y se utilizan para realizar inferencias y tomar decisiones basadas en la evidencia disponible. Estos sistemas son útiles en situaciones de incertidumbre y con datos limitados, y se aplican en campos como medicina, análisis de riesgos y toma de decisiones
+
+## Beneficios
+
+* **Disponibilidad**: están fácilmente disponibles debido a la producción masiva de software
+* **Menor costo de producción**: el costo de producción es razonable. Esto los hace asequibles
+* **Velocidad**: ofrecen una gran velocidad. Reducen la cantidad de trabajo que realiza una persona
+* **Menos tasa de errores**: la tasa de errores es baja en comparación con los errores humanos
+* **Reducción del riesgo**: pueden trabajar en un entorno peligroso para los humanos
 
 ## Distintas aplicaciones de los Sistemas Expertos
 
@@ -72,39 +83,5 @@
 ![Ejemplos de PROLOG 1.3](img/se-ejemplo1-3.png)
 ![Ejemplos de PROLOG 2.1](img/se-ejemplo2-1.png)
 ![Ejemplos de PROLOG 2.2](img/se-ejemplo2-2.png)
-
-## Otro ejemplo
-
-* Sistema de orientación vocacional, que utiliza como dato la afinidad de una persona con determinadas materias, y permite determinar el área de estudio más acorde a la misma.
-
-```prolog
-%Hechos: que materias le gusta a cada persona
-le_gusta(mario, literatura).
-le_gusta(mario, historia).
-le_gusta(mario, deporte).
-le_gusta(ailen, biología).
-le_gusta(ailen, química).
-le_gusta(silvana, matemáticas).
-le_gusta(silvana, programación).
-le_gusta(silvana, música).
-le_gusta(mario, arte).
-le_gusta(fabián, deporte).
-le_gusta(giselle, matemáticas).
-
-%Reglas: el área de estudio recomendo para determinada persona, depende de las materias que le guste. 
-area_de_estudio(X, humanidades):- le_gusta(X, literatura), le_gusta(X, historia).
-area_de_estudio(X, ciencias):- le_gusta(X, biología), le_gusta(X, química).
-area_de_estudio(X, deporte):- le_gusta(X, deporte).
-area_de_estudio(X, ingeniería):- le_gusta(X, matemáticas), le_gusta(X, programación); le_gusta(X, matemáticas).
-area_de_estudio(X, arte):- le_gusta(X, música), le_gusta(X, arte).
-
-%Ejemplo de consultas que pueden realizarse:
-%?-area_de_estudio(mario, X). %Que área de estudio es recomendable para mario.
-%?-area_de_estudio(mario, deporte). %Si el área de estudio de Mario se correspone con el deporte.
-%?-area_de_estudio(X, Y). %Que área de estudio es recomendable para cada persona.
-%?-area_de_estudio(X, ciencias). %A que personas se les recomienda el área de estudio Ciencias.
-%?-le_gusta(X, matemáticas). %A qué personas les gusta las matemáticas.
-%?-le_gusta(silvana, X). %Qué materias le gustan a Silvana.
-%?-le_gusta(X,Y). %Qué materias les gustan a cada persona.
-
-```
+![Ejemplo Laberinto sin bucle](img/laberinto-sin-bucle.png)
+![Ejemplo Laberinto con bucle](img/laberinto-con-bucle.png)
