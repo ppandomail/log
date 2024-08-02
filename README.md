@@ -6,26 +6,27 @@
 
 ## Objetivos
 
-* Conocer y entender los formalismos de la lógica proposicional y de primer orden.
-* Solucionar problemas dentro del Paradigma Lógico.
+* Conocer y entender los formalismos de la lógica proposicional y de primer orden
+* Solucionar problemas dentro del Paradigma Lógico
 
 ## Motivación
 
-* La lógica constituye la herramienta formal de razonamiento de las matemáticas y la programación.
-* Los informáticos necesitan analizar las propiedades lógicas de sus sistemas mientras lo diseñan, desarrollan, verifican y mantienen.
-* En cuanto a la IA, la lógica es el fundamento de todos los métodos de representación del conocimiento y del razonamiento.
+* La lógica constituye la herramienta formal de razonamiento de las matemáticas y la programación
+* Los informáticos necesitan analizar las propiedades lógicas de sus sistemas mientras lo diseñan, desarrollan, verifican y mantienen
+* En cuanto a la IA, la lógica es el fundamento de todos los métodos de representación del conocimiento y del razonamiento
 
 ## Programa
 
-1. [Lógica Proposicional](doc/proposicional.md)
-1. [Lógica de Predicados](doc/predicados.md)
-1. [Programación Lógica](proy/lenguaje-prolog/)
-1. [Verificación Formal de Programas](proy/verificacion-formal-programas/)
-1. [Intro a IA](proy/ia/)
-    1. [Sistemas Expertos](proy/sistemas-expertos/)
-    1. [Agentes Inteligentes](proy/agentes-inteligentes/)
-    1. [Redes Neuronales](proy/rna/)
-    1. [Algoritmos Genéticos](proy/algoritmos-geneticos/)
+| Unidad | Contenido | Ejercicios/Ejemplos |
+| -- | -- | -- |
+| 01 | [Lógica Proposicional](doc/01-proposicional-contenido.md) | [Ejercicios](doc/01-proposicional-ejercicios.md) |
+| 02 | [Lógica de Predicados](doc/02-predicados-contenido.md)    | [Ejercicios](doc/02-predicados-ejercicios.md)    |
+| 03 | Programación Lógica                                       | [Ejemplos](proy/lenguaje-prolog/)                |  
+| 04 | [Verificación Formal de Programas](doc/04-verificación-formal-contenido.md) | [Ejercicios](doc/04-verificación-formal-ejercicios.md)  |
+| 05 | Sistemas Expertos                                         | [Ejemplos](proy/sistemas-expertos/)              |
+| 05 | Agentes Inteligentes                                      | [Ejemplos](proy/agentes-inteligentes/)           |
+| 05 | Redes Neuronales                                          | [Ejemplos](proy/rna/)                            |
+| 05 | Algoritmos Genéticos                                      | [Ejemplos](proy/algoritmos-geneticos/)           |
 
 ## Bibliografía
 
@@ -33,27 +34,6 @@
 * [Lógica para la computación (Luis De Ledesma)](biblio/)
 * [Lógica computacional (José Fernandez y otros)](biblio/libro-logica-computacional.pdf)
 * [Programación Lógica (Pascual Iranzo y otro)](biblio/libro-prog-logica.pdf)
-
-## Cronograma
-
-| **Clase** | **Fecha** | **Tema** |
-| -- | -- | -- |
-| 01 | 27/03 | Presentación |
-| 02 | 03/04 | Lógica Proposicional. Sintaxis |
-| 03 | 10/04 | Lógica Proposicional. Semántica |
-| 04 | 17/04 | Lógica de Predicados. Sintaxis |
-| 05 | 24/04 | Lógica de Predicados. Semántica |
-| 06 | 01/05 | **FERIADO** |
-| 07 | 08/05 | **1er. Parcial** |
-| 08 | 15/05 | Programación Lógica. Sintaxis y Semántica Prolog |
-| 09 | 22/05 | Programación Lógica. Listas en Prolog |
-| 10 | 29/05 | Programación Lógica. Ejercicios Prolog |
-| 11 | 05/06 | Verificación Formal de Programas |
-| 12 | 12/06 | **2do. Parcial** |
-| 13 | 19/06 | **FERIADO** |
-| 14 | 26/06 | Intro IA. AI y SE |
-| 15 | 03/07 | Intro IA. RN y AG |
-| 16 | 10/07 | **Recuperatorios**. Cierre de Notas |
 
 ## Condiciones para aprobar
 
