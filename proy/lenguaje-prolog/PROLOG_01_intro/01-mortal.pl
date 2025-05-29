@@ -15,7 +15,7 @@ mortal(X) :- humano(X).  % afirmamos que para que X sea mortal, antes tiene que 
 
 
 % ¿socrates es humano?
-% ?- human(socrates).
+% ?- humano(socrates).
 % true.
 
 % ¿socrates es mortal?
@@ -26,7 +26,7 @@ mortal(X) :- humano(X).  % afirmamos que para que X sea mortal, antes tiene que 
 % ?- mortal(pepe).
 % false.
 
-% ¿cuantos mortales hay?
+% ¿quienes son mortales?
 % ?- mortal(X).
 % X = socrates
 % X = platon
