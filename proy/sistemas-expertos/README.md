@@ -55,7 +55,7 @@
 * **Predicción**: Deducen consecuencias futuras probables a partir de situaciones dadas
 * **Diagnóstico**: A partir de datos ( normalmente incompletos) averiguar la causa (Ej. Diagnóstico médico)
 * **Diseño**: Construyen objetos a partir de ciertas restricciones dadas (Ej. CAD).
-* **Planificacion**: Diseñan acciones, establecen cursos de acción ( Ej. Robots).
+* **Planificacion**: Diseñan acciones, establecen cursos de acción (Ej. Robots).
 * **Control**: Realizan monitorización, corrección de errores y reparación de forma continua en el tiempo. Dentro de este se realizan un conjunto de sistemas tales como:
   * **Monitorización**: Parecidos a la interpretación, pero además se detecta si la situación es normal o no.
   * **Correción de errores**: Establece los fallos del problema y da soluciones para resolverlos.

@@ -1,0 +1,19 @@
+{
+  "aprobadas": [
+    "introduccion_a_la_programacion",
+    "programacion_con_objetos_i",
+    "unahur_i",
+    "nuevos_entornos_y_lenguajes",
+    "organizacion_de_computadoras",
+    "estructuras_de_datos",
+    "matematica_i"
+  ],
+  "inscriptas": [
+    "bases_de_datos",
+    "ingles_i",
+    "matematica_ii",
+    "programacion_con_objetos_ii"
+  ],
+  "inscripcion_registrada": false,
+  "aviso_cuatrimestre_enviado": false
+}

@@ -3,7 +3,7 @@
 * Son modelos de la IA que se inspiran en el comportamiento de las neuronas y las conexiones cerebrales para resolver problemas.
 * Es un modelo simplificado que simula cómo los cerebros de los seres vivos, en especial el humano, procesa información
 * Las RNA se inspiran en el sistema nervioso y el comportamiento biológico, creando un sistema de interconexión en capas de neuronas artificiales que colaboran para procesar datos de entrada y generar salidas
-* Las RNA se diferencian de otros modelos de IA en tener la capacidad de aprender en forma automática Este proceso también es conocido como machine learning o aprendizaje de máquina
+* Las RNA se diferencian de otros modelos de IA en tener la capacidad de aprender en forma automática. Este proceso también es conocido como machine learning o aprendizaje de máquina
 * Se basan en entrenar datos para aprender y mejorar su precisión con el tiempo, lo cual es un proceso de machine learning llamado aprendizaje profundo. Utilizan nodos o neuronas interconectadas en una estructura de capas que se parece al cerebro humano. Esta configuración crea un sistema adaptable que las computadoras utilizan para aprender de sus errores y mejorar continuamente
 
 ![RNA definición](img/rna-definicion1.jpg)
